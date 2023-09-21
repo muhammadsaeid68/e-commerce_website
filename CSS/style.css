@@ -166,7 +166,47 @@ nav {
     margin: 25px 0;
 }
 
+/* this is responsive nabbar */
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+/* media query for munu */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+   .navbar nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .navbar nav ul li a {
+        color: #fff;
+    }
+}
 
+/* media query for less than 600 screen size */
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+
+    .row .col {
+        flex-basis: 100%;
+    }
+    .header .row .col h1 {
+        font-size: 30px;
+    }
+}
 /* end header section */
 
 
